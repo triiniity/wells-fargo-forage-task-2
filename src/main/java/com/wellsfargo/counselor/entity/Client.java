@@ -32,9 +32,9 @@ public class Client {
     @Column(nullable = false)
     private String email;
 
-    // Add a foreign key to the `Advisor` entity using the `@ManyToOne` annotation.
+    // Add a foreign key from the `Advisor` entity using the `@ManyToOne` annotation.
     @ManyToOne
-    @JoinColumn(name = "advisor_id")
+    @JoinColumn(name = "advisorid")
     @OnDelete(action = OnDeleteAction.CASCADE)
     private Advisor advisor;
 
